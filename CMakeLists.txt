@@ -14,4 +14,6 @@ add_executable(cstarter main.c
     player/structure.c
     olivec/olivec.h
     olivec/olivec.c
+    rust/rust.h
+    rust/rust.c
 )

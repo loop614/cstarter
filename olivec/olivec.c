@@ -3,7 +3,6 @@
 
 void olivec_macros()
 {
-
     int a = 1, b = 2;
     a = -1;
     printf("a = %d\n", a);

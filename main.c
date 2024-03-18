@@ -3,6 +3,7 @@
 #include "player/array.h"
 #include "player/structure.h"
 #include "olivec/olivec.h"
+#include "rust/rust.h"
 
 int main() {
     detect_my_os();
@@ -10,6 +11,7 @@ int main() {
     play_array();
     play_structure();
     olivec_macros();
+    rust();
 
     return 0;
 }

@@ -9,8 +9,8 @@ static void init_my_array(int* array);
 
 void play_array() {
     int* array = (int*) (calloc(ARRAY_LEN,  sizeof(int)));
-    int array2[8] = {0,1, 2, 3, 4, 5, 6, 7};
-    init_my_array(array);
+    int array2[ARRAY_LEN];
+    init_my_array(array2);
     print_my_array(array, ARRAY_LEN);
     size_t array2_size = sizeof(array2) / sizeof(array2[0]);
     print_my_array(array2, array2_size);
@@ -28,6 +28,6 @@ static void print_my_array(int* array, size_t array_size)
 static void init_my_array(int* array)
 {
     for (int i = 0; i < ARRAY_LEN; i++) {
-        array[i] = i;
+        array[i] = i + 1;
     }
 }

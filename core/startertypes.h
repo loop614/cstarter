@@ -17,4 +17,7 @@ typedef double f64;
 typedef char b8;
 typedef int b32;
 
+#define TRUE 1
+#define FALSE 0
+
 #endif //CSTARTER_STARTERTYPES_H

@@ -1,6 +1,7 @@
 #include <stdio.h>
-#include <stdbool.h>
+#include <assert.h>
 
+#include "maiden.h"
 #include "startertypes.h"
 
 void detect_my_os() {
@@ -22,11 +23,9 @@ void detect_my_os() {
 }
 
 void detect_space() {
-    printf("sizeof(bool) = %d <- this should be 1 byte\n", sizeof(bool));
-    printf("sizeof(u8) = %d <- this should be 1 byte\n", sizeof(u8));
-    printf("sizeof(u16) = %d <- this should be 2 bytes\n", sizeof(u16));
-    printf("sizeof(u32) = %d <- this should be 4 bytes\n", sizeof(u32));
-    printf("sizeof(u64) = %d <- this should be 8 bytes\n", sizeof(u64));
+    assert(sizeof(b8) == 1 && "sizeof(bool) should be 1 byte\n");
+    assert(sizeof(u8) == 1 && "sizeof(u8) should be 1 byte\n");
+    assert(sizeof(u16) == 2 && "sizeof(u16) should be 2 bytes\n");
+    assert(sizeof(u32) == 4 && "sizeof(u32) should be 4 bytes\n");
+    assert(sizeof(u64) == 8 && "sizeof(u64) should be 8 bytes\n");
 }
-
-#include "maiden.h"
